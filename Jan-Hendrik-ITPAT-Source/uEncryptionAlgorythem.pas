@@ -8,7 +8,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls , Math,
-  Vcl.ExtCtrls , Shellapi, Vcl.OleCtrls, SHDocVw;
+  Vcl.ExtCtrls , Shellapi, Vcl.OleCtrls, SHDocVw, Vcl.Buttons;
 
   const
    CHARACTERSAMOUNT = 256;
@@ -28,7 +28,10 @@ type
     Timer1: TTimer;
     edtPassword: TEdit;
     lblStrengthscore: TLabel;
-    btnLinkToHTML: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    bmbLinkToHTML: TBitBtn;
     procedure btnProcessClick(Sender: TObject);
     procedure btnDecryptClick(Sender: TObject);
     procedure StartupSetup(Sender: TObject);
@@ -37,7 +40,7 @@ type
     procedure cbWriteToFileClick(Sender: TObject);
     procedure Timer1Timer(Sender: TObject);
     procedure edtPasswordChange(Sender: TObject);
-    procedure btnLinkToHTMLClick(Sender: TObject);
+    procedure bmbLinkToHTMLClick(Sender: TObject);
 
 
   private
@@ -378,9 +381,9 @@ end;
 
 
 
- procedure TForm1.btnLinkToHTMLClick(Sender: TObject);
- var
- ExeDir : string;
+ procedure TForm1.bmbLinkToHTMLClick(Sender: TObject);
+var
+exeDir : string;
 begin
 ExeDir := ExtractFileDir(Application.ExeName);
 ShellExecute(Handle, 'open',
@@ -577,6 +580,7 @@ end;
 
 
 //BTNCLEAR
+
 procedure TForm1.btnClearFileClick(Sender: TObject);
 begin
  AssignFile(EncryptionFile, sReadFileName);

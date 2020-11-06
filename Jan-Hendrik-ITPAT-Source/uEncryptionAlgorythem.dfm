@@ -26,10 +26,31 @@ object Form1: TForm1
     ParentColor = False
   end
   object lblStrengthscore: TLabel
-    Left = 210
+    Left = 365
     Top = 117
-    Width = 3
+    Width = 76
     Height = 13
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 20
+    Width = 47
+    Height = 13
+    Caption = 'Optional :'
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 117
+    Width = 145
+    Height = 13
+    Caption = 'Password for encrypted text :'
+  end
+  object Label3: TLabel
+    Left = 256
+    Top = 213
+    Width = 241
+    Height = 13
+    Caption = 'You can copy the text out of the box below :'
   end
   object RedtOutput: TRichEdit
     Left = 8
@@ -60,7 +81,7 @@ object Form1: TForm1
     Top = 87
     Width = 769
     Height = 21
-    Color = cl3DDkShadow
+    Color = clGrayText
     TabOrder = 1
     TextHint = 'Text to Encrypt'
   end
@@ -92,22 +113,22 @@ object Form1: TForm1
     TextHint = 'Text to Decrypt'
   end
   object cbWriteToFile: TCheckBox
-    Left = 8
-    Top = 10
-    Width = 80
-    Height = 17
-    Caption = 'Write To File'
+    Left = 61
+    Top = 31
+    Width = 132
+    Height = 16
+    Caption = 'Write To external File'
     Color = clMedGray
     ParentColor = False
     TabOrder = 5
     OnClick = cbWriteToFileClick
   end
   object cbReadfromFile: TCheckBox
-    Left = 8
-    Top = 33
-    Width = 96
+    Left = 61
+    Top = 8
+    Width = 140
     Height = 17
-    Caption = 'Read From File'
+    Caption = 'Read From external File'
     TabOrder = 6
     OnClick = cbReadfromFileClick
   end
@@ -121,8 +142,8 @@ object Form1: TForm1
     OnClick = btnClearFileClick
   end
   object edtClock: TEdit
-    Left = 312
-    Top = 8
+    Left = 320
+    Top = 17
     Width = 121
     Height = 21
     Color = clMoneyGreen
@@ -130,23 +151,31 @@ object Form1: TForm1
     TabOrder = 8
   end
   object edtPassword: TEdit
-    Left = 8
+    Left = 159
     Top = 114
     Width = 193
     Height = 21
     Color = cl3DDkShadow
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clCaptionText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 9
     TextHint = 'Enter Password here'
     OnChange = edtPasswordChange
   end
-  object btnLinkToHTML: TButton
-    Left = 691
-    Top = 616
-    Width = 86
+  object bmbLinkToHTML: TBitBtn
+    Left = 640
+    Top = 599
+    Width = 137
     Height = 25
-    Caption = 'Open Website'
+    Caption = 'Open Website for Help'
+    Kind = bkHelp
+    NumGlyphs = 2
     TabOrder = 10
-    OnClick = btnLinkToHTMLClick
+    OnClick = bmbLinkToHTMLClick
   end
   object Timer1: TTimer
     OnTimer = Timer1Timer

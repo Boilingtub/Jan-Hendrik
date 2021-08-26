@@ -1,0 +1,6 @@
+object DM_PeriodEmplyeeCount: TDM_PeriodEmplyeeCount
+  OldCreateOrder = False
+  OnCreate = Setup
+  Height = 150
+  Width = 215
+end

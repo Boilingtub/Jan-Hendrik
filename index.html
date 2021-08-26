@@ -4,23 +4,92 @@
             <meta charset="UTF-8">
             <Title> Jan-Hendrik se WebSite </Title>
             <!--<base href ="https://www.GrianCarriersServerJHBITPAT.com/" target="_blank">-->
-
+			
+		<style>
+		
+			.Dropdownmenubtn
+			{
+			color: #FF7B06;
+			padding: 16px;
+			font-size: 16px;
+			border: solid;
+			}
+			
+			.Dropdownmenu
+			{
+			position: relative;
+			display: inline-block;
+			}
+			
+			.Dropdownmenu-content
+			{
+			display: none;
+			position : absolute;
+			background-color: #f1f1f1;
+            min-width: 200px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			}
+			
+			.Dropdownmenu-content a
+			{
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			}
+			
+			.Dropdownmenu-content a:hover 
+			{
+			background-color: #ddd;
+			}
+			
+			.Dropdownmenu:hover .Dropdownmenu-content
+			{
+			display: block;
+			}
+			
+			.Dropdownmenu:hover .Dropdownmenubtn
+			{
+			blackground-color : #3e8e41;
+			}
+        </style>
       </Head>
+	  <!------------------------------------------------------------------------------------------->
       <Body>
-           <h1>Jan-Hendrik Brink se Website</h1>
-		   <img src="index-images/jhbgesig.jpg" height="500px">
+           <h1><u>Jan-Hendrik Brink se Website</u></h1>
 		   <hr/>
-		    <u> <p style="font-size:30px"> Links na opgelaaide Projekte : </p> </u>
+		    <u> <p style="font-size:30px">Jan-Hendrik opgelaaide projekte : </p> </u>
+			
 		   <br/>
-		   <ul>
-          
-		   <li> <p style="font-size:20px"> <a href = "ITPAT/ITPAT.html"> 2020-11-17 EncryptionAlgorythem </a> </p> </li>
+		   <img src="index-Files/jhbgesig.jpg" height="300px">
+		   <br/>
+		   <div class="Dropdownmenu">
+		     <button class="Dropdownmenubtn">Games</button>
+			 <div class="Dropdownmenu-content">
+			   <a href = "Jan-Hendrik Uploads/Unity2DGame/Unity2Dgame.html"> 2D Unity Game - BlobVenture </a> 
+		       <a href = "Jan-Hendrik Uploads/Unity3DGame/Unity3Dgame.html">  3D Unity Game - World Creator </a>
+		       <a href = "https://m0dule04.itch.io/the-prize-is-a-lie"> The Prize is a Lie game </a>
+			 </div>
+		    </div>
 		   
-		   <li> <p style="font-size:20px"> <a href = "Unity2DGame/Unity2Dgame.html"> 2D Unity Game - BlobVenture </a> </p> </li>
 		   
-		   <li> <p style="font-size:20px"> <a href = "Unity3DGame/Unity3Dgame.html"> <b>!NEW!</b> 3D Unity Game - World Creator <b>!NEW!</b></a> </p> </li>
+		    <div class="Dropdownmenu">
+		     <button class="Dropdownmenubtn">School Projects</button>
+			 <div class="Dropdownmenu-content">
+		       <a href = "Jan-Hendrik Uploads/ITPAT/ITPAT.html"> 2020-11-17 EncryptionAlgorythem </a> 
+		       <a href = "Jan-Hendrik Uploads/2021 ITPAT/2021 ITPAT.html"> 2021-**-** JHBEncryptAndDecryptUnit </a> 
+			 </div>
+		   </div>
 		   
-		   </ul>
+		   
+		    <div class="Dropdownmenu">
+		     <button class="Dropdownmenubtn">Commercial Pojects</button>
+			 <div class="Dropdownmenu-content">
+			   <a href = "Jan-Hendrik Uploads\CommercialProjects\RoadLab\DataBaseTool/RoadLab-DataBaseTool.html"> RoadLab-DataBaseTool </a>
+			 </div>
+		    </div>
+		   
 		  <hr/>
             <br/><br/><br/><br/><br/><br/><br/>			
       </Body>

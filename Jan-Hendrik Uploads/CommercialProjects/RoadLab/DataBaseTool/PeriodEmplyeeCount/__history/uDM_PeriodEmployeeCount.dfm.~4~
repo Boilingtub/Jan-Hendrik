@@ -1,0 +1,15 @@
+object DM_PeriodEmplyeeCount: TDM_PeriodEmplyeeCount
+  OldCreateOrder = False
+  OnCreate = Setup
+  Height = 150
+  Width = 215
+  object ADOConnection1: TADOConnection
+    ConnectionString = 
+      'Provider=SQLNCLI11.1;Persist Security Info=False;User ID="";Init' +
+      'ial Catalog="";Data Source=DESKTOP-1FECIJH;Initial File Name="";' +
+      'Server SPN=""'
+    Provider = 'SQLNCLI11.1'
+    Left = 72
+    Top = 72
+  end
+end

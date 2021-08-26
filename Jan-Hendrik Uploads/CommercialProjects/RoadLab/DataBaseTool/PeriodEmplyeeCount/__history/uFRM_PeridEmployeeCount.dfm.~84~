@@ -1,0 +1,58 @@
+object frmPeriodEmployeeCount: TfrmPeriodEmployeeCount
+  Left = 0
+  Top = 0
+  Caption = '(-JHB-) RoadLab , Period Employee Count '
+  ClientHeight = 408
+  ClientWidth = 439
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = StartUp
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lblHeading: TLabel
+    Left = 327
+    Top = 375
+    Width = 104
+    Height = 25
+    Caption = 'Road Lab'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Unispace'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label1: TLabel
+    Left = 8
+    Top = 387
+    Width = 138
+    Height = 13
+    Caption = 'created by Jan-Hendrik Brink'
+  end
+  object dbgDisp: TDBGrid
+    Left = 8
+    Top = 80
+    Width = 337
+    Height = 235
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object btnSave: TButton
+    Left = 8
+    Top = 8
+    Width = 81
+    Height = 25
+    Caption = 'Save Changes'
+    TabOrder = 1
+    OnClick = btnSaveClick
+  end
+end

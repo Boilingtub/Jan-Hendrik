@@ -1,5 +1,0 @@
-object DM_PeriodEmplyeeCount: TDM_PeriodEmplyeeCount
-  OldCreateOrder = False
-  Height = 150
-  Width = 215
-end

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<Head>
+</Head>
+
+<!------------------------------------------->
+<style>
+iframe{
+    border:double;
+    display:block;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+         }
+
+</style>
+<Body>
+<u><b><h1 style="font-size:50px;text-align:center">Grafana , Prometheus System Monitor</h1></b></u>
+
+<p style="font-size:30px;text-align:center"> WARNING! </p><p style="font-size:18px;text-align:center"> This was all built on a Linux Ubuntu system and is dependent on Prometheus and Node-Exporter </p>
+<p style="font-size:18px;text-align:center"> for the online graphical inteface Grafana is used </p>
+<hr/>
+<u><p style="font-size:40px"> <b> Video Demo of Software : </b></p></u>
+<video class="center" controls> <source src="Files/Prometheus-Grafana(V2).mp4" type="video/mp4"> </video>
+<!--<p style="font-size:35px;border:2px solid Black;background-color:MediumSeaGreen;width:550px;"> <a href = "Tutorial Videos/TutorialVideo.html" target = "_blank"> <b>Video Tutorial for level editor V.1.1</b> </a> </p>-->
+
+<hr/>
+<u><p style="font-size:40px;text-align:center">Scripts :</p></u>
+<br/>
+<u><p style="font-size:25px;text-align:center">Prometheus.yml config file</p></u>
+<iframe src="Files/prometheus.yml" class="center" height="235px"></iframe>
+<br/>
+<u><p style="font-size:25px;text-align:center"> Bash Script for Logging Information from local Prometheus server And Alerting if Hard-Drive usage is above 80%</p></u>
+<iframe src="Files/Prom-LoggerAlerter.sh" class="center" height="235px"></iframe>
+<br/>
+<br/>
+
+
+</Body>
+
+
+</html>
